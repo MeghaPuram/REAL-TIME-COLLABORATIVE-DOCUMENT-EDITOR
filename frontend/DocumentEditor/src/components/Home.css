@@ -1,0 +1,267 @@
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ddd; 
+    color: #ddd; 
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 1.2rem; 
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+/* Header Styles */
+.home .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #5d89d0;       
+}
+
+.home .header p {
+    margin: 0;
+    font-size: 1.4rem; 
+    font-weight: bold;
+    text-align: center; 
+}
+
+.home .header-options {
+    display: flex;
+    align-items: center;  
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.home .header-options select {
+    padding: 0.75rem 1.5rem; 
+    border: 1px solid #444; 
+    border-radius: 5px; 
+    margin-right: 1rem;
+    font-size: 1rem; 
+    background-color: #dddddd;
+    color: #333;
+}
+
+.home .header-options button {
+    background-color: #ddd;
+    border: 1px solid #333;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+    font-weight: 700;
+    padding: .75rem 2rem;
+    font-size: large;
+    transition: background-color 0.3s ease;
+}
+
+
+.home .document-list-container {
+    flex: 1;
+    padding: 1.5rem;
+}
+
+.home .document-container,
+.home .shared-document-list {
+    margin-bottom: 1.5rem;
+    background-color: #d6deed; 
+    border-radius: 2px;
+    padding: 1rem;
+    box-shadow: -20px 20px 10px #05040456;   
+}
+
+.home .document-container h2,
+.home .shared-document-list h2 {
+    margin: 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #444;
+    font-size: 1.5rem; 
+    font-weight: bold;
+    color: #514e4e; 
+    text-align: center; 
+}
+
+.home .document-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.home .document-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #444; 
+    cursor: pointer;
+    background-color: #97b5e5; 
+    color: #434040;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.home .document {
+    display: flex;
+    align-items: center;
+}
+
+.home .document p {
+    margin: 0;
+    flex: 1;
+    font-weight: bold;
+}
+
+.home .buttons-container {
+    display: flex;
+    gap: 1rem;
+}
+
+
+.home .buttons-container button {
+    padding: 0.75rem 2rem;
+    border: 1px solid #458dbd;
+    border-radius: 5px;
+    background-color: #d6deed; 
+    color: #434040; 
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.home .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(147, 174, 230, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ManagePermissionsModal, .rename-document, .send-document, .create-document , .Manage-document {
+    
+      align-items: center;
+      background-color: #d6deed;
+      border-radius: 5px;
+      color: #4a4848;
+      display: flex;
+      flex-direction: row;
+      padding: 20px;
+      flex-wrap: wrap;
+      align-content: stretch;
+      justify-content: space-between;
+  
+}
+
+.ManagePermissionsModal h2, .rename-document h2, .send-document h2, .create-document h2, .Manage-document h2 {
+    margin-bottom: 20px;
+}
+
+.ManagePermissionsModal input, .rename-document input, .send-document input, .create-document input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.ManagePermissionsModal button, .rename-document button, .send-document button, .create-document button , .Manage-document button{
+    padding: 10px 20px;
+    background-color: #fff3f3;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.ManagePermissionsModal button:hover, .rename-document button:hover, .send-document button:hover, .create-document button:hover , .Manage-document button:hover{
+    background-color: #97b5e5;
+}
+input[type="checkbox"] {
+    width: 20px; 
+    height: 20px; 
+    background-color: #EEE; 
+    border-radius: 5px; 
+    border: 2px solid #007BFF; 
+    cursor: pointer; 
+}
+
+input[type="checkbox"]:checked {
+    background-color: #007BFF; 
+}
+
+input[type="checkbox"]:focus {
+    outline: none; 
+}
+
+.send-document .label{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+@media (min-width: 600px) {
+    .home {
+        flex-direction: column; 
+        justify-content: center;
+        
+    }
+    .home .buttons-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+}
+
+/* Adjust for larger screens (1024px and up) */
+@media (min-width: 1024px) {
+
+    .home .document-container, .home .shared-document-list {
+        padding: 2rem;
+        border-radius: 10px;
+    }
+    .home .buttons-container {
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+}
+
+/* Optimize for extra small screens (phones < 600px) */
+@media (max-width: 600px) {
+    .home {
+        font-size: 1rem; 
+    }
+
+    .home .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home .header-options {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .home .buttons-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .home .buttons-container button {
+        width: 100%;
+    }
+}
