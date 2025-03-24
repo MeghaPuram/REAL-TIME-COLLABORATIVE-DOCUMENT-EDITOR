@@ -62,3 +62,14 @@ Sends and receives document changes in real time.
 Uses STOMP (Simple Text Oriented Messaging Protocol) for structured messaging.
 
 ### OUTPUT
+
+![Image](https://github.com/user-attachments/assets/97d1a2c9-7a80-4cad-8126-673ee50561a0)
+
+
+![Image](https://github.com/user-attachments/assets/7b02f6e0-153a-41e3-aee3-c30dfb92727e)
+
+
+![Image](https://github.com/user-attachments/assets/5605434e-baf7-4e3f-b79f-fdc9490ec887)
+
+
+![Image](https://github.com/user-attachments/assets/ba1cb8cc-d90f-4ae8-9d9a-e43db9d28d1f)
