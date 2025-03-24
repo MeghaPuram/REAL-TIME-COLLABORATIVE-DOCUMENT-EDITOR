@@ -1,5 +1,18 @@
 # REAL-TIME-COLLABORATIVE-DOCUMENT-EDITOR
 
+COMPANY : CODTECH IT SOLUTIONS
+
+NAME : MEGHA PURAM
+
+INTERN ID : CT08UON
+
+DOMAIN : FULL STACK WEB DEVELOPMENT
+
+BATCH DURATION : FEBRUARY 15TH, 2025 TO MARCH 15TH, 2025
+
+MENTOR NAME : NEELA SANTOSH KUMAR
+
+
 #### DESCRIPTION
 The Collaborative Text Editor is a real-time document editing web application that allows multiple users to simultaneously edit and view a document. It ensures seamless collaboration by utilizing WebSockets for real-time updates and Spring Boot with MongoDB for backend processing and data persistence. The frontend is built with React.js and integrates the Quill.js rich-text editor to provide a smooth user experience.
 
