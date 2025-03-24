@@ -13,20 +13,16 @@ BATCH DURATION : FEBRUARY 15TH, 2025 TO MARCH 15TH, 2025
 MENTOR NAME : NEELA SANTOSH KUMAR
 
 
-#### DESCRIPTION
-The Collaborative Text Editor is a real-time document editing web application that allows multiple users to simultaneously edit and view a document. It ensures seamless collaboration by utilizing WebSockets for real-time updates and Spring Boot with MongoDB for backend processing and data persistence. The frontend is built with React.js and integrates the Quill.js rich-text editor to provide a smooth user experience.
+### DESCRIPTION
+The Collaborative Document Editor is a real-time document editing web application that allows multiple users to simultaneously edit and view a document. It ensures seamless collaboration by utilizing WebSockets for real-time updates and Spring Boot with MongoDB for backend processing and data persistence. The frontend is built with React.js and integrates the Quill.js rich-text editor to provide a smooth user experience.
 
 This project is designed for team collaboration, enabling multiple users to work on the same document while preserving content consistency across different sessions.
 
-Features
+#### Features
 
 Real-time Collaboration: Multiple users can edit a document simultaneously, and changes are synchronized instantly using WebSockets.
 
 User Authentication: Secure login and authentication via OAuth providers.
-
-Role-Based Access: Users have different access levels such as Viewer, Editor, and Admin.
-
-Cursor Tracking: Displays live cursor positions of other users.
 
 Version History: Maintains a log of all changes made to the document.
 
@@ -38,41 +34,41 @@ Cross-Device Accessibility: Works seamlessly across different devices and screen
 
 Secure Communication: All communication between clients and the server is encrypted.
 
-Technologies Used
+#### Technologies Used
 
-Frontend (React.js & Quill.js)
+* Frontend (React.js & Quill.js)
 
-React.js: JavaScript library for building user interfaces.
+  React.js: JavaScript library for building user interfaces.
+  
+  Quill.js: A powerful WYSIWYG rich text editor.
+  
+  React Router: Enables navigation between different pages.
+  
+  Axios: For making API requests to the backend.
+  
+  CSS: Custom styles for a responsive UI.
 
-Quill.js: A powerful WYSIWYG rich text editor.
+* Backend (Spring Boot & WebSockets)
 
-React Router: Enables navigation between different pages.
-
-Axios: For making API requests to the backend.
-
-CSS: Custom styles for a responsive UI.
-
-Backend (Spring Boot & WebSockets)
-
-Spring Boot: Java framework for backend development.
-
-Spring WebSockets: Enables real-time two-way communication.
-
-MongoDB: NoSQL database for storing documents.
-
-SockJS & STOMP: Provides WebSocket communication for real-time updates.
-
-Spring Security with OAuth: Secure user authentication.
-
-REST APIs: Handles document fetching, updating, and user authentication.
-
-WebSockets for Real-Time Communication
-
-Establishes a persistent connection between clients and the server.
-
-Sends and receives document changes in real time.
-
-Uses STOMP (Simple Text Oriented Messaging Protocol) for structured messaging.
+  Spring Boot: Java framework for backend development.
+  
+  Spring WebSockets: Enables real-time two-way communication.
+  
+  MongoDB: NoSQL database for storing documents.
+  
+  SockJS & STOMP: Provides WebSocket communication for real-time updates.
+  
+  Spring Security with OAuth: Secure user authentication.
+  
+  REST APIs: Handles document fetching, updating, and user authentication.
+  
+* WebSockets for Real-Time Communication
+  
+  Establishes a persistent connection between clients and the server.
+  
+  Sends and receives document changes in real time.
+  
+  Uses STOMP (Simple Text Oriented Messaging Protocol) for structured messaging.
 
 ### OUTPUT
 
